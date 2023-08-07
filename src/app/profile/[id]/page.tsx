@@ -26,7 +26,7 @@ const darkTheme = createTheme({
 
 export default function ProfilePage({ params }: any) {
   const route = useRouter();
-  const [userData, setUserData] = useState('');
+  const [userData, setUserData] = useState<any>('');
 
   const logoutClicked = async () => {
     try {
